@@ -1,0 +1,26 @@
+# macOS metadata
+.DS_Store
+
+# Build directories
+build/
+bin/
+dist/
+
+# Emscripten / WebAssembly build artifacts
+*.wasm
+*.js.mem
+*.worker.js
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE / Editor directories
+.vscode/
+.idea/
+*.swp
+
+# Local game asset dumps (keep proprietary raw assets out of git history)
+assets/raw/
