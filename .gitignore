@@ -24,3 +24,11 @@ Makefile
 
 # Local game asset dumps (keep proprietary raw assets out of git history)
 assets/raw/
+
+# Archive files & test bundles
+*.zip
+*.tar.gz
+*.7z
+
+# Local Wine-Assembly engine clone
+wine-assembly/
