@@ -30,5 +30,5 @@ assets/raw/
 *.tar.gz
 *.7z
 
-# Local Wine-Assembly engine clone
-wine-assembly/
+# Temporary scratch and debug artifacts
+scratch/

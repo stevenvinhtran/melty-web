@@ -1,0 +1,3 @@
+[submodule "wine-assembly"]
+	path = wine-assembly
+	url = https://github.com/stevenvinhtran/wine-assembly.git
