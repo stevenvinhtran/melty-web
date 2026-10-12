@@ -33,6 +33,14 @@ Active bug reports and performance tracking are documented in the [GitHub Issue 
 ### Prerequisites
 - Node.js (v18+)
 - Web browser with WebAssembly SIMD and WebGL 2 support (Chrome, Edge, Firefox, or Safari)
+- **Game Files**: You must supply your own copy of *Melty Blood Actress Again Current Code* (MBAACC v1.07). Proprietary game archives and binaries (`0000.p`–`0006.p`, `MBAA.exe`, etc.) are not distributed with this repository.
+
+### Setting Up Game Assets
+Place your legally acquired MBAACC installation into `assets/raw/MBAACC/` (or symlink it to `wine-assembly/binaries/mbaa`):
+```bash
+mkdir -p assets/raw/MBAACC
+# Copy your MBAACC installation files (MBAA.exe, *.p, *.dat, etc.) into assets/raw/MBAACC/
+```
 
 ### Running Locally
 1. Start the local development server:
