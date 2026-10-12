@@ -8,12 +8,12 @@ A browser-native WebAssembly port of *Melty Blood Actress Again Current Code* (M
 
 The repository is organized into the following components:
 
-- **`wine-assembly/`**: The browser runtime engine, based on [Wine-Assembly (`berrry-wine`)](https://github.com/vgrichina/berrry-wine). It translates Windows x86 PE binaries and Win32/DirectX APIs into WebAssembly, WebGL, and Web Audio.
-- **`src/`**: Native C++ core types and testing scaffolding.
+- **`wine-assembly/`**: The browser runtime engine, linked as a Git submodule to our custom fork [`stevenvinhtran/wine-assembly`](https://github.com/stevenvinhtran/wine-assembly) (derived from upstream [Wine-Assembly / `vgrichina/berrry-wine`](https://github.com/vgrichina/berrry-wine)). It translates Windows x86 PE binaries and Win32/DirectX APIs into WebAssembly, WebGL, and Web Audio.
+- **`net/`**: WebRTC peer-to-peer transport layer and network adapters for rollback netcode.
 - **`assets/`**: Asset descriptors and game bundle manifests. Proprietary game assets (`assets/raw/`) are excluded from version control.
-- **`docs/`**: Technical documentation, including details on modifications made to the upstream runtime engine.
-
-For a detailed breakdown of all changes made to the base Wine-Assembly runtime, see [docs/CHANGES_TO_UPSTREAM.md](docs/CHANGES_TO_UPSTREAM.md).
+- **`docs/`**: Technical documentation:
+  - [docs/CHANGES_TO_UPSTREAM.md](docs/CHANGES_TO_UPSTREAM.md): Full breakdown of all engine enhancements made to base Wine-Assembly.
+  - [docs/P2P_NETPLAY_PLAN.md](docs/P2P_NETPLAY_PLAN.md): Architecture and roadmap for WebRTC P2P rollback netplay.
 
 ---
 
